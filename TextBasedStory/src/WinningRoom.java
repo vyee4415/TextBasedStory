@@ -11,7 +11,7 @@ public class WinningRoom extends Room {
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("Congraduatiosn!!???.");
+		System.out.println("Congraduatiosn!!???. You found da principals officc!");
 		Runner.gameOff();
 	}
 	
