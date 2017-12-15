@@ -4,6 +4,7 @@ public class Room {
 	Person occupant;
 	int xLoc,yLoc;
 	Scanner in = new Scanner(System.in);
+	private boolean explored = false;
 	
 	public Room(int x, int y)
 	{
@@ -23,5 +24,16 @@ public class Room {
 	{
 		occupant = null;
 	}
-	
+	public void print(){
+		if((!explored)&&(occupant == null)){
+			System.out.print("[ ]");
+		}else if(occupant != null) {
+			System.out.print("[");;
+			occupant.print("x");
+			System.out.print("]");
+		}else if(explored) {
+			System.out.println("[x]");
+		}
+	}
 }
+

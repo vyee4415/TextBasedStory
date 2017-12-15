@@ -18,20 +18,28 @@ public class Runner {
 			}
 		}
 		
-		//Create a random winning room.
+		
+// Rooms with different types of animals in them		
+		//Create a cage room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
-		building[x][y] = new WinningRoom(x, y);
+		building[x][y] = new CageRoom(x, y);
 		
-		//Create a weird room
+		//Create a dog room
 		x = (int)(Math.random()*building.length);
 		y = (int)(Math.random()*building.length);
-		building[x][y] = new WeirdRoom(x, y);
+		building[x][y] = new DogRoom(x, y);
 		
-//		//Create a math room
-//		x = (int)(Math.random()*building.length);
-//		y = (int)(Math.random()*building.length);
-//		building[x][y] = new RunRoom(x, y);
+		//Create a cat room
+		x = (int)(Math.random()*building.length);
+		y = (int)(Math.random()*building.length);
+		building[x][y] = new CatRoom(x, y);
+		
+		//Create a snake room
+		x = (int)(Math.random()*building.length);
+		y = (int)(Math.random()*building.length);
+		building[x][y] = new SnakeRoom(x, y);
+		
 		
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
@@ -43,11 +51,13 @@ public class Runner {
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
+				Board s = new Board(x);
+				System.out.print(x.printBoard());
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
 				
 			}
 			else {
-				System.out.println("Please choose a valid move.");
+				System.out.println("There's no door there.");
 			}
 			
 			

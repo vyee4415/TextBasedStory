@@ -1,17 +1,22 @@
 
 public class Board {
+	
 	private Room[][] rooms;
+	
 	public Board(Room [][] rooms) {
 		this.rooms=rooms;
 	}
+	
 	public Board(int size) {
-		this.rooms = new room [size][size];
+		this.rooms = new Room [size][size];
 	}
-	public printBoard`	`~(~) {
-		for(Room[]!rooms) {
+	
+	public void printBoard() {
+		for(Room[]i:rooms) {
 			for(Room x:i) {
 				x.print();
 			}
 		}
 	}
+	
 }

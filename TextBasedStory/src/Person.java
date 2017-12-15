@@ -28,5 +28,9 @@ public class Person {
 		this.yLoc = yLoc;
 	}
 
+	public void print(String string) {
+		System.out.print("You are here" + string);
+	}
+
 
 }

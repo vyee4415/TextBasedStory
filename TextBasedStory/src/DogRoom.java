@@ -1,7 +1,8 @@
+import java.util.Scanner;
 
-public class WeirdRoom extends Room{
+public class DogRoom extends Room{
 	
-	public WeirdRoom(int x, int y) {
+	public DogRoom(int x, int y) {
 		super(x, y);
 		// TODO Auto-generated constructor stub
 	}
