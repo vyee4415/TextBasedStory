@@ -16,6 +16,7 @@ public class Board {
 			for(Room x:i) {
 				x.print();
 			}
+			System.out.println();
 		}
 	}
 	

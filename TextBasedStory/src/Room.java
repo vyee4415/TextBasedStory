@@ -13,7 +13,7 @@ public class Room {
 	}
 	public void enterRoom(Person x)
 	{
-		System.out.println("DOG");
+		System.out.println("This room is empty.");
 		
 		occupant = x;
 		x.setxLoc(this.xLoc);
@@ -32,7 +32,7 @@ public class Room {
 			occupant.print("x");
 			System.out.print("]");
 		}else if(explored) {
-			System.out.println("[x]");
+			System.out.println("[-]");
 		}
 	}
 }

@@ -29,7 +29,7 @@ public class Person {
 	}
 
 	public void print(String string) {
-		System.out.print("You are here" + string);
+		System.out.print("x");
 	}
 
 
