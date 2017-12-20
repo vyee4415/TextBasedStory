@@ -14,7 +14,7 @@ public class Room {
 	public void enterRoom(Person x)
 	{
 		System.out.println("This room is empty.");
-		
+		explored = true;
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -32,7 +32,7 @@ public class Room {
 			occupant.print("x");
 			System.out.print("]");
 		}else if(explored) {
-			System.out.println("[-]");
+			System.out.print("[-]");
 		}
 	}
 }
