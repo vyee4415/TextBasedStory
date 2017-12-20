@@ -5,6 +5,10 @@ public class Room {
 	int xLoc,yLoc;
 	Scanner in = new Scanner(System.in);
 	private boolean explored = false;
+	private boolean ce = false;
+	private boolean de = false;
+	private boolean se = false;
+	private boolean main = false;
 	
 	public Room(int x, int y)
 	{
@@ -14,8 +18,8 @@ public class Room {
 	public void enterRoom(Person x)
 	{
 		System.out.println("This room is empty.");
-		explored = true;
 		occupant = x;
+		setExplored(true);
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 	}
@@ -25,15 +29,55 @@ public class Room {
 		occupant = null;
 	}
 	public void print(){
-		if((!explored)&&(occupant == null)){
+		if((!isExplored())&&(occupant == null)){
 			System.out.print("[ ]");
 		}else if(occupant != null) {
 			System.out.print("[");;
 			occupant.print("x");
 			System.out.print("]");
-		}else if(explored) {
+		}else if(isExplored()) {
 			System.out.print("[-]");
 		}
+		 else if(ce) {
+			System.out.print("[C]");
+		}else if(de) {
+			System.out.print("[D]");
+		}else if(se) {
+			System.out.print("[S]");
+		}else if(main) {
+			System.out.print("[S]");
+		}
 	}
+	public boolean isExplored() {
+		return explored;
+	}
+	public void setExplored(boolean explored) {
+		this.explored = explored;
+	}
+	public boolean isse() {
+		return se;
+	}
+	public void setse(boolean se) {
+		this.se = se;
+	}
+	public boolean isde() {
+		return de;
+	}
+	public void setde(boolean de) {
+		this.de = de;
+	}
+	public boolean isce() {
+		return ce;
+	}
+	public void setce(boolean ce) {
+		this.ce = ce;
+	}
+	public boolean ismain() {
+		return main;
+	}
+	public void setmain(boolean explored) {
+		this.explored = explored;
+	}
+	
 }
 
