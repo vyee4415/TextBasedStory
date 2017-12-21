@@ -17,8 +17,8 @@ public class CatRoom extends Room{
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE CATS");
 //		if(problem(a,b)!=a*b) {
 //			System.out.println("THE CATS SCRATCHED U");
-//			x.setxLoc(this.xLoc);
-//			x.setyLoc(this.yLoc);
+			x.setxLoc(this.xLoc);
+			x.setyLoc(this.yLoc);
 		}
 	}
 //	public static int problem(double a, double b) {

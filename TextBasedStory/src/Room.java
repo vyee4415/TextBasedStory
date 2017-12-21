@@ -8,6 +8,7 @@ public class Room {
 	private boolean ce = false;
 	private boolean de = false;
 	private boolean se = false;
+	private boolean ie = false;
 	private boolean main = false;
 	
 	public Room(int x, int y)
@@ -29,7 +30,17 @@ public class Room {
 		occupant = null;
 	}
 	public void print(){
-		if((!isExplored())&&(occupant == null)){
+		 if(ce) {
+			System.out.print("[C]");
+		}else if(de) {
+			System.out.print("[D]");
+		}else if(se) {
+			System.out.print("[S]");
+		}else if(main) {
+			System.out.print("[M]");
+		}else if(ie) {
+			System.out.print("[I]");
+		}else if((!isExplored())&&(occupant == null)){
 			System.out.print("[ ]");
 		}else if(occupant != null) {
 			System.out.print("[");;
@@ -37,15 +48,6 @@ public class Room {
 			System.out.print("]");
 		}else if(isExplored()) {
 			System.out.print("[-]");
-		}
-		 else if(ce) {
-			System.out.print("[C]");
-		}else if(de) {
-			System.out.print("[D]");
-		}else if(se) {
-			System.out.print("[S]");
-		}else if(main) {
-			System.out.print("[S]");
 		}
 	}
 	public boolean isExplored() {
@@ -66,6 +68,12 @@ public class Room {
 	public void setde(boolean de) {
 		this.de = de;
 	}
+	public void setie(boolean ie) {
+		this.ie = ie;
+	}
+	public boolean isie() {
+		return ie;
+	}
 	public boolean isce() {
 		return ce;
 	}
@@ -75,8 +83,8 @@ public class Room {
 	public boolean ismain() {
 		return main;
 	}
-	public void setmain(boolean explored) {
-		this.explored = explored;
+	public void setmain(boolean main) {
+		this.main = main;
 	}
 	
 }

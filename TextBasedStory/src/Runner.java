@@ -19,23 +19,32 @@ public class Runner {
 		}
 		
 		
+		// Create instructional room
+		int i = (int)(0);
+		int j = (int)(0);
+		building[i][j] = new InstructionalRoom(i, j);
+		
 // Rooms with different types of animals in them		
-		//Create a cage room.
+		// Create a cage room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
+		while((x==0)&&(y==0)) {
+			x = (int)(Math.random()*building.length);
+			y = (int)(Math.random()*building.length);
+		}
 		building[x][y] = new CageRoom(x, y);
 		
-		//Create a dog room
+		// Create a dog room
 		int a = (int)(Math.random()*building.length);
 		int b = (int)(Math.random()*building.length);
 		building[a][b] = new DogRoom(a, b);
 		
-		//Create a cat room
+		// Create a cat room
 		int c = (int)(Math.random()*building.length);
 		int d = (int)(Math.random()*building.length);
 		building[c][d] = new CatRoom(c, d);
 		
-		//Create a snake room
+		// Create a snake room
 		int e = (int)(Math.random()*building.length);
 		int f = (int)(Math.random()*building.length);
 		building[e][f] = new SnakeRoom(e, f);

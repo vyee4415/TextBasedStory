@@ -17,8 +17,8 @@ public class SnakeRoom extends Room{
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE SNAKES");
 //		if(problem(a,b)!=a*b) {
 //			System.out.println("THE SNAKES GOT U");
-//			x.setxLoc(this.xLoc);
-//			x.setyLoc(this.yLoc);
+			x.setxLoc(this.xLoc);
+			x.setyLoc(this.yLoc);
 //		}
 //	}
 //	public static int problem(double a, double b) {
@@ -27,7 +27,7 @@ public class SnakeRoom extends Room{
 //		int n = reader.nextInt();
 //		reader.close(); 
 //		return n;
-//	}
+	}
 }
 
 
