@@ -28,10 +28,6 @@ public class Runner {
 		// Create a cage room.
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
-		while((x==0)&&(y==0)) {
-			x = (int)(Math.random()*building.length);
-			y = (int)(Math.random()*building.length);
-		}
 		building[x][y] = new CageRoom(x, y);
 		
 		// Create a dog room

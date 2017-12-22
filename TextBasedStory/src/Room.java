@@ -4,6 +4,7 @@ public class Room {
 	Person occupant;
 	int xLoc,yLoc;
 	Scanner in = new Scanner(System.in);
+	private int animals = 0;
 	private boolean explored = false;
 	private boolean ce = false;
 	private boolean de = false;
@@ -50,6 +51,13 @@ public class Room {
 			System.out.print("[-]");
 		}
 	}
+	public int isanimals() {
+		return animals;
+	}
+	public void setanimals(int animals) {
+		this.animals = animals;
+	}
+
 	public boolean isExplored() {
 		return explored;
 	}
