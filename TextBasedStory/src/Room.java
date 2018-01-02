@@ -12,6 +12,10 @@ public class Room {
 	private boolean ie = false;
 	private boolean main = false;
 	
+	private boolean dog = false;
+	private boolean snake = false;
+	private boolean cat = false;
+	
 	public Room(int x, int y)
 	{
 		xLoc = x;
@@ -95,5 +99,24 @@ public class Room {
 		this.main = main;
 	}
 	
+
+	public boolean isDog() {
+		return dog;
+	}
+	public void setDog(boolean dog) {
+		this.dog = dog;
+	}
+	public boolean isCat() {
+		return cat;
+	}
+	public void setCat(boolean cat) {
+		this.cat = cat;
+	}
+	public boolean isSnake() {
+		return snake;
+	}
+	public void setSnake(boolean snake) {
+		this.snake = snake;
+	}
 }
 

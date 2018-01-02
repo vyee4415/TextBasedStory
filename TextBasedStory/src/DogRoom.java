@@ -8,24 +8,26 @@ public class DogRoom extends Room{
 	}
 	@Override
 	public void enterRoom(Person x) {
-		int a = (int) (Math.random()*10);
-		int b = (int) (Math.random()*10);
-		Math.round (a); 
-		Math.round (b);
+		int c = (int) (Math.random()*10);
+		int d = (int) (Math.random()*10);
+		Math.round (c); 
+		Math.round (d);
 		setde(true);
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		// TODO Auto-generated method stub
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE DOGS");
-		problem(a,b);
+		if(problem(c,d)==c*d) {
+			setDog(true);
+		}
 	}
-	public static int problem(double a, double b) {
+	public static int problem(double c, double d) {
 		Scanner reader = new Scanner(System.in);
-		System.out.println("WHAT'S " + a + " X " + b + " ?");
+		System.out.println("WHAT'S " + c + " X " + d + " ?");
 		try {
 			int n = reader.nextInt();
-			if(n!=a*b) {
+			if(n!=c*d) {
 				System.out.println("THE DOGS BIT U");
 				Runner.gameOff();
 			}

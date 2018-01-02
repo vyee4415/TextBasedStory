@@ -18,7 +18,9 @@ public class SnakeRoom extends Room{
 		// TODO Auto-generated method stub
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE SNAKES");
-		problem(a,b);
+		if(problem(a,b)==a*b) {
+			setSnake(true);
+		}
 	}
 	public static int problem(double a, double b) {
 		Scanner reader = new Scanner(System.in);

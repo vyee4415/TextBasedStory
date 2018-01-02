@@ -8,24 +8,26 @@ public class CatRoom extends Room{
 	}
 	@Override
 	public void enterRoom(Person x) {
-		int a = (int) (Math.random()*10);
-		int b = (int) (Math.random()*10);
-		Math.round (a); 
-		Math.round (b);
+		int g = (int) (Math.random()*10);
+		int f = (int) (Math.random()*10);
+		Math.round (g); 
+		Math.round (f);
 		setce(true);
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		// TODO Auto-generated method stub
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE CATS");
-		problem(a,b);
+		if(problem(g,f)==g*f) {
+			setCat(true);
+		}
 	}
-	public static int problem(double a, double b) {
+	public static int problem(double g, double f) {
 		Scanner reader = new Scanner(System.in);
-		System.out.println("WHAT'S " + a + " X " + b + " ?");
+		System.out.println("WHAT'S " + g + " X " + f + " ?");
 		try {
 			int n = reader.nextInt();
-			if(n!=a*b) {
+			if(n!=g*f) {
 				System.out.println("THE CATS SCRATCHED U");
 				Runner.gameOff();
 			}
