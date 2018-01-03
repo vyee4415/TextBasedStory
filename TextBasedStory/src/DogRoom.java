@@ -10,8 +10,6 @@ public class DogRoom extends Room{
 	public void enterRoom(Person x) {
 		int c = (int) (Math.random()*10);
 		int d = (int) (Math.random()*10);
-		Math.round (c); 
-		Math.round (d);
 		setde(true);
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -19,6 +17,7 @@ public class DogRoom extends Room{
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE DOGS");
 		if(problem(c,d)==c*d) {
+			System.out.println("YOU COLLECTED THE DOGS");
 			setDog(true);
 		}
 	}

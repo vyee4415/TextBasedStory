@@ -19,6 +19,7 @@ public class CatRoom extends Room{
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE CATS");
 		if(problem(g,f)==g*f) {
+			System.out.println("YOU COLLECTED THE CATS");
 			setCat(true);
 		}
 	}

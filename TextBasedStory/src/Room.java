@@ -12,9 +12,9 @@ public class Room {
 	private boolean ie = false;
 	private boolean main = false;
 	
-	private boolean dog = false;
-	private boolean snake = false;
-	private boolean cat = false;
+	private static boolean dog = false;
+	private static boolean snake = false;
+	private static boolean cat = false;
 	
 	public Room(int x, int y)
 	{
@@ -103,20 +103,20 @@ public class Room {
 	public boolean isDog() {
 		return dog;
 	}
-	public void setDog(boolean dog) {
-		this.dog = dog;
+	public void setDog(boolean dog1) {
+		dog = dog1;
 	}
 	public boolean isCat() {
 		return cat;
 	}
-	public void setCat(boolean cat) {
-		this.cat = cat;
+	public void setCat(boolean cat1) {
+		cat = cat1;
 	}
 	public boolean isSnake() {
 		return snake;
 	}
-	public void setSnake(boolean snake) {
-		this.snake = snake;
+	public void setSnake(boolean snake1) {
+		snake = snake1;
 	}
 }
 

@@ -1,4 +1,8 @@
 
+// Vivian Yee
+// Period 2
+
+
 public class InstructionalRoom extends Room {
 
 	public InstructionalRoom(int x, int y) {

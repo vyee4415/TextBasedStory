@@ -19,6 +19,7 @@ public class SnakeRoom extends Room{
 		occupant = x;
 		System.out.println("SOLVE THIS PROBLEM TO COLLECT ALL THE SNAKES");
 		if(problem(a,b)==a*b) {
+			System.out.println("YOU COLLECTED THE SNAKES");
 			setSnake(true);
 		}
 	}
