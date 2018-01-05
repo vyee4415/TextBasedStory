@@ -1,5 +1,14 @@
 
-public class Person {
+// Vivian Yee
+// Period 2
+
+// Person
+
+// This creates the name of the user and the location
+// Shows 'x' displaying where they are
+
+
+public class Person { // declares name
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
@@ -27,7 +36,8 @@ public class Person {
 		this.xLoc = xLoc;
 		this.yLoc = yLoc;
 	}
-
+	
+	// when user is in a room, display 'x'
 	public void print(String string) {
 		System.out.print("x");
 	}
