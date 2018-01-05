@@ -17,22 +17,23 @@ public class CageRoom extends Room {
 		System.out.println("PRESS 'Z' TO DROP OFF DOG");
 		System.out.println("PRESS 'X' TO DROP OFF SNAKE");
 		System.out.println("PRESS 'C' TO DROP OFF CAT");
-		System.out.println("PRESS IF YOU DROPPED ALL THE ANIMALS");
+		System.out.println("PRESS 'V' IF YOU DROPPED OFF ALL THE ANIMALS");
 		System.out.println(cage());
 	}
 	public String cage() {
 		Scanner reader = new Scanner(System.in);
 		System.out.println("WHICH ANIMAL DO YOU WANT TO DROP");
 		String n = in.nextLine();
+		n = n.toLowerCase().trim();
 		if((isDog())&&(n.equals("Z"))) {
 			return("YOU DROPPED DOG");
 		}else if((isCat())&&(n.equals("C"))){
 			return("YOU DROPPED CAT");
 		}else if((isSnake())&&(n.equals("X"))) {
 			return("YOU DROPPED SNAKE");
-		}else if((isSnake())&&(isCat())&&(isDog())) {
+		}else if((n.equals("V"))&&(isSnake())&&(isCat())&&(isDog())) {
 			Runner.gameOff();
-			return("YOU DROPPED OFF ALL OF THE ANIMALS!\r\n YOU WIN!");
+			return("YOU DROPPED OFF ALL OF THE ANIMALS!\n YOU WIN!");
 		}else{
 			return("THAT'S NOT VALID");
 		}

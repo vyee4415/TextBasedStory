@@ -26,24 +26,19 @@ public class Runner {
 		
 // Rooms with different types of animals in them		
 		// Create a cage room.
-		int x = (int)(Math.random()*building.length);
-		int y = (int)(Math.random()*building.length);
-		building[x][y] = new CageRoom(x, y);
+		building[4][4] = new CageRoom(4, 4);
 		
 		// Create a dog room
 		int a = (int)(Math.random()*building.length);
-		int b = (int)(Math.random()*building.length);
-		building[a][b] = new DogRoom(a, b);
+		building[a][1] = new DogRoom(a, b);
 		
 		// Create a cat room
 		int c = (int)(Math.random()*building.length);
-		int d = (int)(Math.random()*building.length);
-		building[c][d] = new CatRoom(c, d);
+		building[c][2] = new CatRoom(c, d);
 		
 		// Create a snake room
 		int e = (int)(Math.random()*building.length);
-		int f = (int)(Math.random()*building.length);
-		building[e][f] = new SnakeRoom(e, f);
+		building[e][3] = new SnakeRoom(e, f);
 		
 		
 		 //Setup player 1 and the input scanner
