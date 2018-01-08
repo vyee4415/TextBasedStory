@@ -31,6 +31,8 @@ public class InstructionalRoom extends Room {
 		System.out.println("THEY MIGHT FORCE YOU TO ANSWER A MATH QUESTION BUT BEWARE");
 		System.out.println("IF YOU GET IT WRONG THEY WILL EAT YOU!");
 		System.out.println(" ");
+		System.out.println("C IS CAT ROOM, D IS DOG ROOM, S IS SNAKE ROOM, AND M IS CAGE ROOM TO PUT THE ANIMALS IN");
+		System.out.println(" ");
 		System.out.println("HOW TO WIN:");
 		System.out.println("COLLECT ALL THE DOGS, CATS, AND SNAKES BY SOLVING A MATH PROBLEM");
 		System.out.println("IF YOU GET IT WRONG YOU DIE BUT IF YOU GET IT RIGHT YOU COLLECT THE ANIMAL");
